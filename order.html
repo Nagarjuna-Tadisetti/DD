@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="food.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css'>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+    <script src="login_cookie.js"></script>
+</head>
+<body>
+<header class="nav-down" style="background-color: #333;">
+<div class="navbar navbar-static-top" style="margin-bottom:0px; background-color: #333;">
+      <div class="container">
+          <div class="my-top-bar" >
+            <div style="display: inline-block;">&nbsp;</div>
+            <div style="display: inline-block;float: right;">
+                <span style="color:white">Welcome, Have an account? &nbsp;</span>
+                <div class="sign-in">
+                <a href="login.html" class="sign-in"><span>Please login</span></a>
+                </div>
+              </div>
+          </div>
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/perk.png" alt="perk" width="80" height="40">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse" >
+            <div style="width: 50%; margin: 0 auto;">
+			<ul class="nav navbar-nav">
+			<li class="dropdown menu-large">
+                  <a href="#" class="dropdown-toggle " data-toggle="dropdown"> MENU </a>
+                  <ul class="dropdown-menu megamenu row">
+                    <li>
+                        <div class="row " style="padding:40px 60px 30px 40px">
+                            <div class="col-sm-4 my-menu-div"  style="background-image: url('images/item1.png');background-repeat: no-repeat;height:200px;padding:0 0 0 80px;" >
+                            <div class="my-menu-div my-menu-first">
+                            <a href="#">
+                                <span>NEW FROZEN McD <br> COFFEE</span>
+                            </a>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                <span class="menu-heading"><a href="food.html">Food and Drink<br></a></span>
+                                <span class="menu-content"><a href="food.html">Fresh-brewed beverages and tasty snacks—plus everything in between.</a></span>
+                                <br><hr>
+                                    <span class="menu-heading"><a href="#">Nutrition</a><br></span>
+                                    <span class="menu-content"><a href="#">Hungry for nutrition? Find it here for all our great-tasting menu options.</a></span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                    <span class="menu-heading"><a href="#">Offers and Promotions</a><br></span>
+                                    <span class="menu-content"><a href="#">Check out what deals are brewin' in our restaurants – we update frequently.</a></span>
+                            </div>
+                            </div>
+                        </div> 
+					</li>
+                  </ul>
+            </li>
+            <li class="dropdown menu-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> LOCATIONS </a>
+                  <ul class="dropdown-menu megamenu row">
+                    <li>
+                        <div class="row">
+                            <div class="col-sm-4 col-sm-offset-2">
+                                <img src="images/location.png" alt="location" width="300px" height="300px"> 
+                            </div>
+                            <div class="col-sm-6">
+                            <div><br><br>
+                                <span class="menu-heading"><a href="#">FIND CLOSEST DUNKIN'<br></a></span>
+                                <span class="menu-content"><a href="#">Get directions and details on the Dunkin’ Donuts nearest to you!.</a></span>
+                                <br><br>
+                                <div class="col-sm-4">
+                                   <input type="text" class="form-control " id="location" placeholder="City State or Zip">
+                                </div>
+                                    <button type="button" class="btn btn-default my-button"><span class="menu-heading" style="color:white">SEARCH</span></button><br><br><br><br><br>
+                            </div>
+                            </div>
+                        </div>     
+					</li>
+                  </ul>
+            </li>
+            <li class="dropdown menu-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> SHOP </a>
+                  <ul class="dropdown-menu megamenu row">
+                    <li>
+                         <div class="row " style="padding:40px 60px 30px 40px">
+                            <div class="col-sm-4 my-menu-div" style="background-image: url('images/item12.png');background-repeat: no-repeat;height:200px;padding:0 0 0 80px;">
+                            <div class="my-menu-div my-menu-first">
+                            <a href="#">
+                                <span>DUNKIN’ SHOP<br><br> Everything you love about Dunkin' delivered right to your door.</span>
+                            </a>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                <span class="menu-heading"><a href="#">Shop Online<br></a></span>
+                                <span class="menu-content"><a href="#">Show your Dunkin’ love with mugs, packaged coffee & more.</a></span><br>
+                                <br><hr>
+                                    <span class="menu-heading"><a href="#">Coffee</a><br></span>
+                                    <span class="menu-content"><a href="#">Find a grocer near you that carries your favorite varieties in bags or K-Cup Pods®</a></span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                    <span class="menu-heading"><a href="#">Subscriptions</a><br></span>
+                                    <span class="menu-content"><a href="#">Get Dunkin’ delivered as often as you like with a Regular Refills® subscription.</a></span>
+                                    <br><hr>
+                                    <span class="menu-heading"><a href="#">Creamers</a><br></span>
+                                    <span class="menu-content"><a href="#">Find a grocer near you that carries your favorite Dunkin’ Creamer</a></span>
+                            </div>
+                            </div>
+                        </div>      
+					</li>
+                  </ul>
+            </li>
+            <li class="dropdown menu-large">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> McD CARD </a>
+                  <ul class="dropdown-menu megamenu row">
+                    <li>
+                       <div class="row " style="padding:40px 60px 30px 40px">
+                            <div class="col-sm-4 my-menu-div" style="background-image: url('images/item13.jpg');background-repeat: no-repeat;height:200px;padding:0 0 0 80px;">
+                            <div class="my-menu-div my-menu-first">
+                            <a href="#">
+                                <span>GET A DD CARD <br> GIVE SOME LOVE</span>
+                            </a>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                <span class="menu-heading"><a href="#">Get a DD Card<br></a></span>
+                                <span class="menu-content"><a href="#">Personalize a DD Card for someone special-then send it instantly.</a></span>
+                                <br><hr>
+                                    <span class="menu-heading"><a href="#">Register a DD Card</a><br></span>
+                                    <span class="menu-content"><a href="#">Make sure your balance stays where it belongs—on your card.</a></span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                    <span class="menu-heading"><a href="#">Manage Account</a><br></span>
+                                    <span class="menu-content"><a href="#">Make changes to your account and DD Card easily.</a></span>
+                            </div>
+                            </div>
+                        </div>       
+					</li>
+                  </ul>
+            </li>
+			<li class="dropdown menu-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown"> SHOP </a>
+                  <ul class="dropdown-menu megamenu row">
+                    <li>
+                         <div class="row " style="padding:40px 60px 30px 40px">
+                            <div class="col-sm-4">
+                            <div>
+                                <span class="menu-heading"><a href="#">About Us<br></a></span>
+                                <span class="menu-content"><a href="#">Discover all the ingredients that make us America’s favorite coffee shop.</a></span>
+                                <br><hr>
+                                    <span class="menu-heading"><a href="#">Blog</a><br></span>
+                                    <span class="menu-content"><a href="#">Take a look “Behind the Beans”—our company blog, updated weekly.</a></span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                <span class="menu-heading"><a href="#">Contact Us<br></a></span>
+                                <span class="menu-content"><a href="#">Don’t be a stranger—we’re happy to answer any question.</a></span><br>
+                                <br><hr>
+                                    <span class="menu-heading"><a href="#">Joy in Childhood Foundation</a><br></span>
+                                    <span class="menu-content"><a href="#">We serve much more than coffee to our communities.</a></span>
+                            </div>
+                            </div>
+                            <div class="col-sm-4">
+                            <div>
+                                    <span class="menu-heading"><a href="#">Careers</a><br></span>
+                                    <span class="menu-content"><a href="#">We’re always seeking new friends to join our team—apply today.</a></span>
+                                    <br><hr>
+                                    <span class="menu-heading"><a href="#">Franchising</a><br></span>
+                                    <span class="menu-content"><a href="#">Join a fast-growing franchise network with 130+ years of experience.</a></span>
+                            </div>
+                            </div>
+                        </div>      
+					</li>
+                  </ul>				
+			</li>
+		</ul>
+            </div>
+                <div style="display: inline-block;float: right;padding:10px">
+                    <a href="#"><img src="images/logo.jpg" alt="perk" width="80" height="40" style="padding-top: 5px;"></a>
+                </div>  
+		</div>
+      </div>
+    </div>
+  </header>
+
+    
+    <div>
+        <div>
+            <div class="first-banner" style="background-image:url(images/banner.jpg);width: 100%;height: 400px;">
+            <div >
+            <h1>MORE TO LOVE</h1>
+            <span>Experience a loyalty program that's loyal to you.</span>
+            </div>
+            </div>
+        </div>
+            
+        <!--start order -->
+    <div class="container">
+
+<div id="wrap">
+    <form class="go-right">
+	<div id="grid">
+		<div class="column column1">
+		<div class="step" id="step1">
+			<div class="number">
+				<span>1</span>
+			</div>
+			<div class="title">
+				<h1>Email Address</h1>
+			</div>
+		</div>
+		<div class="content" id="email">
+				<div>
+        <input type="email" name="email" value="" id="email-address" placeholder="Email Address" data-trigger="change" data-validation-minlength="1" data-type="email" data-required="true" data-error-message="Enter a valid email address."/>
+        </div>
+		</div>
+		<div class="step" id="step2">
+			<div class="number">
+				<span>2</span>
+			</div>
+			<div class="title">
+				<h1>Shipping Information</h1>
+			</div>
+		</div>
+		<div class="content" id="address">
+			
+				<div>
+				<input type="name" name="first_name" value="" id="first_name" placeholder="First Name" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your First Name"/>
+        </div>
+        
+				<div>
+				<input type="name" name="last_name" value="" id="last_name" placeholder="Last Name" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="true" data-error-message="Enter Your Last Name"/>
+				</div>
+				<div>
+				<input type="phone" name="telephone" value="" id="telephone" placeholder="(555)-555-5555" data-trigger="change" data-validation-minlength="1" data-type="number" data-required="true" data-error-message="Enter Your Telephone Number"/>
+				</div>
+				<div>
+				<input type="text" name="company" value="" id="company" placeholder="Company" data-trigger="change" data-validation-minlength="1" data-type="name" data-required="false"/>
+				</div>
+				<div>
+				<input type="text" name="address" value="" id="address" placeholder="Address" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Address"/>
+				</div>
+				<div>
+				<input type="text" name="city" value="" id="city" placeholder="City" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing City"/>
+				</div>
+				<div>
+				<input type="text" name="zip" value="" id="zip" placeholder="Zip Code" data-trigger="change" data-validation-minlength="1" data-type="text" data-required="true" data-error-message="Enter Your Billing Zip Code"/>
+				</div>
+		</div>
+	</div>
+	<div class="column column2">
+		<div class="step" id="step4">
+			<div class="number">
+				<span>3</span>
+			</div>
+			<div class="title">
+				<h1>Payment Information</h1>
+			</div>
+		</div>
+		<div class="content" id="payment">
+  
+    <div class="form-container">
+      <div class="personal-information">
+        <h1>Payment Information</h1>
+      </div> <!-- end of personal-information -->
+      
+      <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+      <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+      <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+      <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+    
+        <div class="card-wrapper"></div>
+          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>           
+			
+      </div>
+        </div></div>
+ 	<div class="column column3">
+ 		<div class="step" id="step5">
+			<div class="number">
+				<span>4</span>
+			</div>
+			<div class="title">
+				<h1>Finalize Order</h1>
+			</div>
+		</div>
+		<div class="content" id="final_products">
+			<div class="left" id="ordered">
+                <div class="product_list">
+                </div>
+				<ul class="shopping-cart-items" style="max-height:200px; overflow:auto;"></ul>
+				<div class="totals">
+					<span class="subtitle">Subtotal <span id="sub_price"></span></span>
+					<span class="subtitle">Tax <span id="sub_tax"></span></span>
+					<span class="subtitle">Shipping <span id="sub_ship">$5.00</span></span>
+				</div>
+				<div class="final">
+					<span class="title">Total <span id="calculated_total"></span></span>
+				</div>
+			</div>	
+			<div class="right" id="reviewed">
+				<div id="complete">
+				<a class="big_button" id="complete" href="#">Place Order</a>
+				<span class="sub">By selecting this button you agree to the purchase and subsequent payment for this order.</span> 
+			</div>
+		</div>
+	</div>
+</div>
+        </div></form>
+        </div>
+    
+    </div>  
+</div>    
+        <!--start order -->
+    
+    
+    <footer class="footer">
+  <div class="footer-left col-md-4 col-sm-6">
+    <p class=" menu">
+      <span style="font-size:30px"> Quick links</span> <br>
+        <a href="#">Press Room</a> |
+        <a href="#">Mobile App</a> |
+        <a href="#">Corporate</a><br>
+        <a href="#">Careers</a> |
+        <a href="#">FAQ</a> |
+        <a href="#">Franchising</a>
+      
+    </p>
+    <div class="icons">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      <a href="#"><i class="fa fa-instagram"></i></a>
+    </div>
+  </div>
+  <div class="footer-center col-md-4 col-sm-6">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span> Street name and number</span> City, Country</p>
+    </div>
+    <div>
+      <i class="fa fa-phone"></i>
+      <p> (+00) 0000 000 000</p>
+    </div>
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="#"> office@company.com</a></p>
+    </div>
+  </div>
+  <div class="footer-right col-md-4 col-sm-6">
+    <h2> McDonald's</h2>
+    <p class="menu">
+      <a href="#"> Home</a> |
+      <a href="#"> About</a> |
+      <a href="#"> Services</a> |
+      <a href="#"> Portfolio</a> |
+      <a href="#"> News</a> |
+      <a href="#"> Contact</a>
+    </p>
+    <p class="name"> Company Name &copy; 2016</p>
+  </div>
+</footer>
+        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/card.js'></script>
+<script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/121761/jquery.card.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>  
+</body>
+    
+    
+</html>
